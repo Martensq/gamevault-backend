@@ -29,15 +29,18 @@ Install dependencies:
 
 Create a `.env` file at the root of the project:
 
-PORT=4000
-JWT_SECRET=your-secret-key
-DATABASE_URL="postgresql://USER:PASSWORD@localhost:5432/gamevault"
+`PORT=4000`
+
+`JWT_SECRET=your-secret-key`
+
+`DATABASE_URL="postgresql://USER:PASSWORD@localhost:5432/gamevault"`
 
 ## Database Setup
 
 Run Prisma migrations:
 
 `npx prisma migrate dev`
+
 `npx prisma generate`
 
 Open prisma studio : `npx prisma studio`
