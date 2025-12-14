@@ -10,8 +10,6 @@ The API handles:
 
 Database: **PostgreSQL**
 
----
-
 ## Tech Stack
 
 - Node.js
@@ -21,15 +19,11 @@ Database: **PostgreSQL**
 - JSON Web Tokens (JWT)
 - bcrypt (password hashing)
 
----
-
 ## Installation
 
 Install dependencies:
 
-npm install
-
----
+`npm install`
 
 ## Environment Variables
 
@@ -39,31 +33,27 @@ PORT=4000
 JWT_SECRET=your-secret-key
 DATABASE_URL="postgresql://USER:PASSWORD@localhost:5432/gamevault"
 
----
-
 ## Database Setup
 
 Run Prisma migrations:
 
-npx prisma migrate dev
-npx prisma generate
+`npx prisma migrate dev`
+`npx prisma generate`
 
-Open prisma studio : npx prisma studio
-
----
+Open prisma studio : `npx prisma studio`
 
 ## Running the Server
 
 Start the API in development mode:
 
-npm run dev
+`npm run dev`
+
 or
-npm run dev:watch
+
+`npm run dev:watch`
 
 The server will be available at:
-http://localhost:4000
-
----
+`http://localhost:4000`
 
 ## Authentication
 
@@ -74,9 +64,7 @@ Authentication is handled using JWT.
 
 Example:
 
-Authorization: Bearer YOUR_JWT_TOKEN
-
----
+`Authorization: Bearer YOUR_JWT_TOKEN`
 
 ## Main Endpoints
 
@@ -90,8 +78,6 @@ Games (protected):
 - PUT    /api/games/:id
 - DELETE /api/games/:id
 
----
-
 ## Data Ownership
 
 Each game is linked to its owner (user).
@@ -99,8 +85,6 @@ Each game is linked to its owner (user).
 - A user can only see their own games
 - A user can only modify or delete their own games
 - Ownership is enforced at the API level
-
----
 
 ## Notes
 
